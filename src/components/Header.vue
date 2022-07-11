@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import FilledLinkComponent from '@/components/link/FilledLinkComponent.vue';
-import LinkComponent from './link/LinkComponent.vue';
+import FilledLink from '@/components/link/FilledLink.vue';
+import Link from './link/DefaultLink.vue';
 </script>
 
 <template>
   <div class="container">
-      <LinkComponent href="/" label="Home" />
+      <Link href="/" label="Home" />
       <div class="right">
         <div class="rightItem">
-          <LinkComponent href="/projects" label="Projects" />
+          <Link href="/projects" label="Projects" />
         </div>
         <div class="rightItem">
-          <FilledLinkComponent href="/contact" label="Contact" variant="filled" />
+          <FilledLink href="/contact" label="Contact" variant="filled" />
         </div>
       </div>
   </div>
@@ -22,7 +22,7 @@ import LinkComponent from './link/LinkComponent.vue';
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 27px 0;
   }
 
   .right {

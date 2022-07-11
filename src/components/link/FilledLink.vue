@@ -8,10 +8,10 @@ defineProps<{
 </script>
 
 <template>
-  <RouterLink class="defaultLinkStyle" :to="href">{{ label }}</RouterLink>
+  <RouterLink class="filledLinkStyle" :to="href">{{ label }}</RouterLink>
 </template>
 
 <style scoped lang="scss">
-  @import '@/assets/colors.scss';
+  @import '@/styles/colors.css';
   @import './coreStyle.scss';
 </style>
